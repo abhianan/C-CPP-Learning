@@ -13,10 +13,10 @@ void passref(int *val){//passed the address and we are changing value inside add
     }
 int main()
 {
-    int x=20;
-    passval(x);
-    cout<<x<<endl;
-    passref(&x);
+    int x=20;  //initialize x
+    passval(x);  //call by value: passval()
+    cout<<x<<endl; 
+    passref(&x);  //call by reference:: passref()
     cout<<x;
     return 0;
 }
